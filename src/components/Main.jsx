@@ -1,13 +1,17 @@
 import React from 'react';
 import './Main.css';
+import dataVideo from './dataVideo';
 
 import Plyr from 'plyr-react';
 import 'plyr-react/plyr.css';
 
+let rand = Math.floor(Math.random() * dataVideo.length);
+let randomVideo = dataVideo[rand];
+
 const plyrProps = {
   source: {
     type: 'video',
-    sources: [{ src: 'S7U8ExhCK50', provider: 'youtube' }],
+    sources: [{ src: `${randomVideo}`, provider: 'youtube' }],
   },
   options: {
     autoplay: true,

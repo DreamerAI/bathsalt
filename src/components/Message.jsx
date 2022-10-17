@@ -1,17 +1,19 @@
 import React from 'react';
 import './Message.css';
+import dataMessage from './dataMessage';
 
 function Message() {
+  let rand = Math.floor(Math.random() * dataMessage.length);
+
+  let randomMessage = dataMessage[rand];
+
   return (
     <div className="message container">
       <div className="message__header">
         <p>Индивидуальное послание</p>
       </div>
       <div className="message__content">
-        <p>
-          С тобой все в порядке. Ты ценность. Что бы ни происходило, не вини и не ругай себя. Просто
-          скажи себе: «Со мной все в порядке. Я ценность»
-        </p>
+        <p>{randomMessage}</p>
       </div>
     </div>
   );
