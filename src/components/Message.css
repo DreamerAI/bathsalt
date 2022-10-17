@@ -1,0 +1,23 @@
+.message {
+
+    background:url(../images/message_bg.png) no-repeat;
+    background-position: 50% 30%;
+    text-align: center;
+    background-color:white;
+    margin: 0 50px;
+    margin-top: 15px;
+    border-radius:15px;
+}
+
+.message__header {
+    padding-top: 20px;
+    font-size: 2.8rem;
+}
+
+.message__content {
+    color:#FF66CF;
+
+    font-size: 2.5rem;
+    padding: 20px 90px;
+    margin-bottom: 30px;
+}
