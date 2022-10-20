@@ -1,19 +1,24 @@
 import React from 'react';
 import './Message.css';
+
 import dataMessage from './dataMessage';
 
 function Message() {
-  let rand = Math.floor(Math.random() * dataMessage.length);
+  // Pull random message from dataMessage array
 
+  let rand = Math.floor(Math.random() * dataMessage.length);
   let randomMessage = dataMessage[rand];
 
   return (
     <div className="message container">
+      <div className="message__firstBall ball__glow"></div>
+      <div className="message__secondBall ball__glow"></div>
+      <div className="message__thirdBall ball__glow"></div>
       <div className="message__header">
         <p>Индивидуальное послание</p>
       </div>
       <div className="message__content">
-        <p>{randomMessage}</p>
+        <span>{randomMessage}</span>
       </div>
     </div>
   );

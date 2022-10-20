@@ -30,13 +30,17 @@ function Main() {
         </div>
         <div className="main__contacts">
           <div className="main__links">
-            <a href="#asd" className="main__links_wrapper link__wildberries">
+            <a
+              href="https://www.wildberries.ru/catalog/95336441/detail.aspx"
+              className="main__links_wrapper link__wildberries">
               <div className=" main__btn">Купить на Wildberries</div>
             </a>
-            <a href="#asd" className="main__links_wrapper link__ozon">
+            <a
+              href="https://www.ozon.ru/context/detail/id/660925397/"
+              className="main__links_wrapper link__ozon">
               <div className=" main__btn">Купить на Ozon</div>
             </a>
-            <a href="#asd" className="main__links_wrapper link__whatsapp">
+            <a href="https://wa.me/79296045505" className="main__links_wrapper link__whatsapp">
               <div className=" main__btn">Связаться со мной</div>
             </a>
           </div>

@@ -1,18 +1,20 @@
-import headeLogo from './images/logo.png';
+import headerLogo from './images/logo.png';
 import './App.css';
-import Main from './components/Main';
-import Message from './components/Message';
+
+import Main from './components/Main/Main';
+import Message from './components/Message/Message';
 
 function App() {
   return (
     <div className="App">
       <header className="container header">
         <div className="header__logo">
-          <img src={headeLogo} alt="" width={140} height={140} />
+          <img src={headerLogo} alt="Лого соль для ванн" width={140} height={140} />
         </div>
       </header>
-      <Main />
+
       <Message />
+      <Main />
     </div>
   );
 }
