@@ -5,21 +5,21 @@ import dataVideo from './dataVideo';
 import Plyr from 'plyr-react';
 import 'plyr-react/plyr.css';
 
-let rand = Math.floor(Math.random() * dataVideo.length);
-let randomVideo = dataVideo[rand];
-
-const plyrProps = {
-  source: {
-    type: 'video',
-    sources: [{ src: `${randomVideo}`, provider: 'youtube' }],
-  },
-  options: {
-    autoplay: true,
-    quality: { default: 720, options: [1080, 720, 576, 480, 360, 240] },
-  },
-};
-
 function Main() {
+  let rand = Math.floor(Math.random() * dataVideo.length);
+  let randomVideo = dataVideo[rand];
+
+  const plyrProps = {
+    source: {
+      type: 'video',
+      sources: [{ src: `${randomVideo}`, provider: 'youtube' }],
+    },
+    options: {
+      autoplay: false,
+      youtube: { noCookie: false, rel: 0, showinfo: 0, iv_load_policy: 3, modestbranding: 1 },
+    },
+  };
+
   return (
     <>
       <div className="main container">
