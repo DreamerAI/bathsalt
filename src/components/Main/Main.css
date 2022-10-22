@@ -103,4 +103,8 @@
   .main__btn {
     font-size: 1rem;
   }
+
+  .main__contacts {
+    margin-bottom: 30px;
+  }
 }
