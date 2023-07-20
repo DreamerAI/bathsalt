@@ -1,7 +1,6 @@
 .main {
   display: grid;
   grid-auto-flow: column dense;
-  grid-auto-rows: 1fr;
   grid-template-columns: 1.3fr 0.7fr;
   grid-template-rows: 1fr;
   gap: 0px 20px;
@@ -35,18 +34,20 @@
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     'link__wildberries'
     'link__ozon'
+    'link__letual'
     'link__whatsapp';
   justify-items: center;
   overflow-wrap: break-word;
 }
 .link__wildberries {
+  margin-top: 20px;
   justify-self: center;
-  align-self: end;
+  align-self: center;
   grid-area: link__wildberries;
   background: linear-gradient(90deg, #dc45ec 0%, #60117e 100%);
 }
@@ -56,9 +57,18 @@
   grid-area: link__ozon;
   background: #2259f4;
 }
-.link__whatsapp {
+
+.link__letual {
   justify-self: center;
-  align-self: start;
+  align-self: center;
+  grid-area: link__letual;
+  background: #2a3881;
+}
+
+.link__whatsapp {
+  margin-bottom: 20px;
+  justify-self: center;
+  align-self: center;
   grid-area: link__whatsapp;
   background: #219e43;
 }

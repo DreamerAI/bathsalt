@@ -3,7 +3,7 @@ import './Message.css';
 
 import dataMessage from './dataMessage';
 
-function Message() {
+function Message({ anchorButton }) {
   // Pull random message from dataMessage array
 
   let rand = Math.floor(Math.random() * dataMessage.length);
@@ -19,6 +19,11 @@ function Message() {
       </div>
       <div className="message__content">
         <span>{randomMessage}</span>
+        <p>
+          <a className="message__anchor--btn" href={`#${anchorButton}`}>
+            Послушать музыку
+          </a>
+        </p>
       </div>
     </div>
   );

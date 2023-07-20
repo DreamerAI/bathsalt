@@ -5,6 +5,7 @@ import Main from './components/Main/Main';
 import Message from './components/Message/Message';
 
 function App() {
+  let anchorButton = 'skip-to-video';
   return (
     <div className="App">
       <header className="container header">
@@ -13,8 +14,9 @@ function App() {
         </div>
       </header>
 
-      <Message />
-      <Main />
+      <Message anchorButton={anchorButton} />
+
+      <Main anchorButton={anchorButton} />
     </div>
   );
 }

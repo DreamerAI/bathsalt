@@ -5,7 +5,7 @@ import dataVideo from './dataVideo';
 import Plyr from 'plyr-react';
 import 'plyr-react/plyr.css';
 
-function Main() {
+function Main({ anchorButton }) {
   let rand = Math.floor(Math.random() * dataVideo.length);
   let randomVideo = dataVideo[rand];
 
@@ -23,7 +23,7 @@ function Main() {
   return (
     <>
       <div className="main container">
-        <div className="main__video">
+        <div className="main__video" id={anchorButton}>
           <div className="video_frame">
             <Plyr {...plyrProps} />
           </div>
@@ -39,6 +39,11 @@ function Main() {
               href="https://www.ozon.ru/context/detail/id/660925397/"
               className="main__links_wrapper link__ozon">
               <div className=" main__btn">Купить на Ozon</div>
+            </a>
+            <a
+              href="https://www.letu.ru/product/serenity-of-mind-sol-dlya-vann/126301288"
+              className="main__links_wrapper link__letual">
+              <div className=" main__btn">Купить в Л’Этуаль</div>
             </a>
             <a href="https://wa.me/79296045505" className="main__links_wrapper link__whatsapp">
               <div className=" main__btn">Связаться со мной</div>
